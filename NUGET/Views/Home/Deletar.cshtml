@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "Deletar";
+}
+
+<h1>Deletar Usuario:</h1>
+
+<div class="text-center">
+
+    <form method="post" asp-action="Deletar">
+        <label>Id: </label>
+        <input type="number" name="idlogin" />
+
+        <button action="submit">Deletar</button>
+    </form>
+</div>
+
+<p>@ViewData["Message"]</p>
+

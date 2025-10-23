@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<h1>Editar usuario e senha:</h1>
+
+<div class= "text-center">
+
+    <form method="post" asp-action="Editar">
+        <label>Id: </label>
+        <input type="number" name="idlogin" />
+        <label>Usuário: </label>
+        <input type="text" name="usuario" />
+        <label>Senha: </label>
+        <input type="password" name="senha" />
+        <button action="submit">Alterar</button>
+    </form>
+</div>
+
+<p>@ViewData["Message"]</p>
+ 

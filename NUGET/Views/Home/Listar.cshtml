@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "Listar";
+}
+
+<h1>Listar Dados: </h1>
+<div class="text-center">
+
+    <form method="post" asp-action="Listar">
+        <label>Id: </label>
+        <input type="number" name="idlogin"/>
+        <button action="submit">Listar</button>
+    </form>
+</div>
+
+<p>Status: @ViewData["Message"]</p>                
+<br />
+<p>Usuario: @ViewData["UsuarioEncontrado"]</p>
+<p>Senha: @ViewData["SenhaEncontrada"]</p>
